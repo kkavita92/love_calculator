@@ -5,7 +5,7 @@ class LoveCalculatorTest < Minitest::Test
     refute_nil ::LoveCalculator::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_returns_99_percent_when_two_names_entered
+    assert Calculator::LoveCalculator.calculate_love("Tom", "Henry") == 0.99
   end
 end
