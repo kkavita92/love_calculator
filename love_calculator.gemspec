@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "An iteration of the 90's love calculators."
   spec.description   = "Put in two names and it will return a completely legitimate percentage rate that those two people will fall in love."
-  spec.homepage      = "www.github.com/kkavita92/love_calculator"
+  spec.homepage      = "https://github.com/kkavita92/love_calculator"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
+  spec.add_development_dependency "cucumber"
+  spec.add_development_dependency "aruba"
 end
