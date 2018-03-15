@@ -6,6 +6,10 @@ class LoveCalculatorTest < Minitest::Test
   end
 
   def test_it_returns_99_percent_when_two_names_entered
-    assert Calculator::LoveCalculator.calculate_love("Tom", "Henry") == 0.99
+    assert Calculator::LoveCalculator.match("Tom", "Henry") == 0.99
+  end
+
+  def test_it_returns_75_percent_for_calculating_love_probability
+    assert Calculator::LoveCalculator.hea_probability("Maria") == 0.75
   end
 end
