@@ -15,7 +15,7 @@ module LoveCalculator
       end
 
       def copy_config
-        template("config.txt", "config/#{name}.txt")
+        template("config.yml", "config/#{name}.yml")
       end
     end
   end
