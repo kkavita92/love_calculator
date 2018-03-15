@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'love_calculator/cli'
+LoveCalculator::CLI.start
