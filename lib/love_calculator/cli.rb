@@ -1,5 +1,6 @@
 require 'thor'
 require 'love_calculator'
+require 'love_calculator/generators/init'
 
 module LoveCalculator
   class CLI < Thor
@@ -13,6 +14,11 @@ module LoveCalculator
     method_option :name, :aliases => "-n"
     def happilyeverafter
       puts Calculator::LoveCalculator.hea_probability(options[:name])
+    end
+
+    desc "init", "Generates a config scaffold"
+    def init (name)
+      LoveCalculator::Generators::Init.start([name])
     end
 
   end
